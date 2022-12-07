@@ -3,7 +3,7 @@ package Main;
 import BO.ClienteBO;
 import DTO.Cliente;
 
-public class MainInsercao {
+public class MainInsercaoCliente {
 	
 	public static void main(String[] args) {
 		
@@ -14,11 +14,7 @@ public class MainInsercao {
 		else
 			System.out.println("Erro ao Inserir");
 		
-		Cliente cliente2 = new Cliente("Roberto Carvalho","robertocarvalho@gmail.com", "2347-3432");
-		if (clienteBO.inserir(cliente2))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
+	
 		
 	}
 
