@@ -13,9 +13,21 @@ public class PessoaFisica extends Cliente {
 		this.cpf = cpf;
 	}
 	
+	
+	
+	public PessoaFisica(String nome, String cpf) {
+		super(nome, cpf);
+	}
+	
 	public PessoaFisica(String nome, String cpf, String email, String telefone) {
 		super(nome, email, telefone);
 		setCpf(cpf);
+	}
+	
+	public PessoaFisica(int codigo, String nome, String cpf, String email, String telefone) {
+		super(nome, email, telefone);
+		setCpf(cpf);
+		setCodigo(codigo);
 	}
 
 	public String getCpf() {
@@ -31,18 +43,12 @@ public class PessoaFisica extends Cliente {
 		StringBuilder builder = new StringBuilder();
 		builder.append("PessoaFisica [cpf=");
 		builder.append(cpf);
-		builder.append(", getNome()=");
+		builder.append(", Nome()=");
 		builder.append(getNome());
-		builder.append(", getEmail()=");
+		builder.append(", Email()=");
 		builder.append(getEmail());
-		builder.append(", getTelefone()=");
+		builder.append(", Telefone()=");
 		builder.append(getTelefone());
-		builder.append(", toString()=");
-		builder.append(super.toString());
-		builder.append(", getClass()=");
-		builder.append(getClass());
-		builder.append(", hashCode()=");
-		builder.append(hashCode());
 		builder.append("]");
 		return builder.toString();
 	}

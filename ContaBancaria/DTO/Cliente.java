@@ -11,10 +11,20 @@ public class Cliente {
 
 	}
 	
+	public Cliente(int codigo) {
+		setCodigo(codigo);
+	}
+	
 	public Cliente(String nome) {
 		setNome(nome);
 	}
 	
+	public Cliente(int codigo, String nome) {
+		setCodigo(codigo);
+		setNome(nome);
+	}
+	
+		
 	public Cliente(String nome, String email) {
 		setNome(nome);
 		setEmail(email);
